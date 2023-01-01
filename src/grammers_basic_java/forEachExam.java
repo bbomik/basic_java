@@ -19,7 +19,7 @@ public class forEachExam {
 		//for문은 ;세미콜론을 구분으로 3개로 나뉘었지만
 		//for each문은 :콜론을 구분으로 2개로 나뉨
 		//예) for(타입 값을 받아줄 변수명 : 출력하고 싶은 자료구조)
-		for(int value:iarr) { //for each는 별도의 값을 받는 변수선언에 배열 출력
+		for(int value:iarr) { //for each는 별도의 값을 받는 변수선언 한번에 배열까지 출력 가능
 			System.out.println(value);
 		}
 	}
