@@ -16,6 +16,7 @@ public class Car { //붕어빵틀
 	  	//this : 객체 자신을 참조하는 키워드(변수 명이 동일할 때 구분하기 위해 사용)
 	  	//위의 this.name = name; 은 내 필드(Class) 안의 name에다가 지금 선언한 name을 넣어주세요 라는 의미 //결과 : 소방차
 	  	//this를 사용하지 않고 name = name이라고 사용시 name을 클래스에 대한 name으로 인지하지 못함 //결과 : null
+		System.out.println("Car의 name 생성자 입니다.");
 	  
 	}
 
@@ -28,8 +29,10 @@ public class Car { //붕어빵틀
 		  
 		//위에 줄 처럼 같은 코드를 여러번 중복 작성할 필요 없음.
 		  this("이름없음",0);
+		  System.out.println("Car의 기본 생성자 입니다.");
+		  
 	}
-	  
+	  	  
 	  public Car(String name, int number) {
 		//이름과 숫자도 받아드리는 Car메서드 생성
 		  this.name = name;
@@ -42,4 +45,8 @@ public class Car { //붕어빵틀
 	// >> 기본 생성자 : 매개변수가 없는 생성자
 	// (생성자를 하나라도 프로그래머가 만들었다면 기본생성자는 자동으로 만들어지지 않는다.)
 	
+	  public void run() {
+		//System.out.println("달리다.");
+		 System.out.println("Car의 run 메서드");
+	}
 }
